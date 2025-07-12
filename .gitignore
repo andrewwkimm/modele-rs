@@ -1,0 +1,9 @@
+# Absolute paths
+/scratch/*
+/target
+
+# Patterns
+.DS_Store
+
+# Exclusions
+!/scratch/README.md
