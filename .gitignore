@@ -1,4 +1,5 @@
 # Absolute paths
+/.env
 /scratch/*
 /target
 
