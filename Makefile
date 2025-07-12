@@ -16,10 +16,6 @@ lint:
 reformat:
 	cargo fmt
 
-setup:
-	rustup component add rustfmt clippy
-	cargo build
-
 test:
 	cargo test
 
@@ -33,6 +29,5 @@ type_check:
 	help \
 	lint \
 	reformat \
-	setup \
 	test \
 	type_check
