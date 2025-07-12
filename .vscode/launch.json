@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Rust: Debug Current File",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "Rust: Test All",
+            "type": "lldb",
+            "request": "launch",
+            "program": "cargo",
+            "args": ["test"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Rust: Test Current File",
+            "type": "lldb",
+            "request": "launch",
+            "program": "cargo",
+            "args": ["test", "--bin", "${fileBasenameNoExtension}"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
